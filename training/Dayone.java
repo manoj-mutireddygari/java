@@ -15,10 +15,40 @@ public class Dayone {
         //op.amstrongnumber();
         //op.sumofdigits();
         //op.Strongnumber();
+        op.Palindromstring();
     }
 
 
     //Functions
+    public void Palindromstring(){
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+
+        // Remove special characters and spaces
+        String cleaned = input.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        System.out.println(cleaned);
+
+        // Check palindrome
+        int left = 0;
+        int right = cleaned.length() - 1;
+        boolean isPalindrome = true;
+
+        while (left < right) {
+            if (cleaned.charAt(left) != cleaned.charAt(right)) {
+                isPalindrome = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+
+        if (isPalindrome) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+    
     public void Strongnumber(){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the number: ");
