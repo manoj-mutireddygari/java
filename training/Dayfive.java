@@ -72,7 +72,7 @@ public class Dayfive {
     }
 
     //printing the max elemnt in the array
-    public void Maxarray(){
+    public static void Maxarray(){
         int arr[]={10,20,30,40};
         int max=0;
         for(int i=0;i<arr.length;i++){
