@@ -13,9 +13,9 @@ public class Dayone {
         //op.Table();
         //op.Sumofnumbers();
         //op.amstrongnumber();
-        //op.sumofdigits();
+        op.sumofdigits();
         //op.Strongnumber();
-        op.Palindromstring();
+        //op.Palindromstring();
     }
 
 
@@ -55,12 +55,11 @@ public class Dayone {
         int n=sc.nextInt();
         sc.close();
         int n1=n;
-        int x=1;
         int sum=0;
         while(n>0){
             int y=n%10;
             n=n/10;
-            x=1;
+            int x=1;
             for(int i=1;i<=y;i++){
                 x=x*i;
             }

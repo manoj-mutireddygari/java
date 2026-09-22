@@ -24,6 +24,8 @@ public class Daytwo {
         //op.StarG();
         //op.Nameinx();
         //op.Nameinz();
+        //op.Lefttriangle();
+        op.Toplefttraingle();
     }
 
     //functions
@@ -65,7 +67,6 @@ public class Daytwo {
             for(int j=0;j<n;j++){
                 if((i==j)||(i+j==n-1)){
                     System.out.print(a.charAt(i));
-                    //System.out.print(a.charAt(j));
                 }
                 else{System.out.print("  ");}
             }
@@ -366,7 +367,28 @@ public class Daytwo {
         }
 
     }
+    /*
+        *
+       **
+      ***
+     ****
+    *****.  */
+    public void Lefttriangle(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n=sc.nextInt();
+        sc.close();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) { 
+                System.out.print(" "); 
+            }
+            for (int k = 1; k <= i; k++) { 
+                System.out.print("*"); 
+        } 
+        System.out.println(); 
+}
 
+    }
     // pattern of right angled traingle
       /* *
          **
@@ -431,6 +453,23 @@ public class Daytwo {
         sc.close();
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    /* ****
+       ***
+       **
+       *.    */
+
+    public void Toplefttraingle(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n=sc.nextInt();
+        sc.close();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
                 System.out.print("*");
             }
             System.out.println();
